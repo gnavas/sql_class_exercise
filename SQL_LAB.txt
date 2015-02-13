@@ -39,6 +39,10 @@ ALTER TABLE properties ADD CONSTRAINT owner_fk FOREIGN KEY(owner_id) REFERENCES 
 20. Show all of the information from the owners table and the properties table in one joined table.  
 apartmentlab=# SELECT * FROM owners JOIN properties on owners.owner_id = properties.owner_id; 
 
+21) How to check Foreign Key is in place - 
+
+\d+ "table_name"
+
 # Ask instructors how to confirm that FK is attached to table without deleting a PK as a check#
 
 
